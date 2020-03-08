@@ -1,0 +1,25 @@
+{% extends 'main/base.html' %}
+{% load static %}
+{% load staticfiles %}
+{% block page_header %}
+<main role="main" class="container">
+  <div class="pb-2 mb-2 border-bottom">
+    <div class="jumbotron">
+      <h1 class="text-center pb-5">Welcome in Our Smart Attendence System</h1>
+      <div class="row change">
+        <div class="col-sm-6 text-center mb-3">
+          <button class="btn btn-lg btn-primary"  id="stud_login" type="button">As Student &raquo;</button>
+          <!-- <center><a class="btn btn-lg btn-primary" href="" role="button"> As Student &raquo;</a></center> -->
+        </div>
+
+        <div class="col-sm-5 text-center mb-3">
+          <button class="btn btn-lg btn-primary"  id="teacher_login" type="button">As Teacher &raquo;</button>
+          <!-- <center><a class="btn btn-lg btn-primary" href="" role="button"> As Teacher &raquo;</a></center> -->
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script type="text/javascript" src="{% static 'js/general.js' %}"></script>
+{% endblock page_header %}

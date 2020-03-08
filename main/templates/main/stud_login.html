@@ -1,0 +1,24 @@
+{% load static %}
+{% block page_header %}
+<div class="jumbotron">
+  <h1 class="text-center">Hello student</h1>
+  <div class="col-lg-5 mx-auto border border-info rounded p-3 m-3">
+    <div class="form-group">
+      <label>Faculty ID</label>
+      <input type="text" name="faculty_id" class="form-control">
+    </div>
+    <div class="form-group">
+      <label>Passkey</label>
+      <input type="text" name="faculty_key" class="form-control">
+    </div>
+    <div class="form-group">
+      <button class="btn btn-lg btn-primary form-control" type="button">Sign In</button>
+    </div>
+  </div>
+  <div class="text-center">
+    <button class="btn btn-lg btn-primary" id="back" type="button">Back</button>
+  </div>
+</div>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script type="text/javascript" src="{% static 'js/back.js' %}"></script>
+{% endblock page_header %}
